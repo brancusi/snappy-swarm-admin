@@ -1,0 +1,15 @@
+.landingPage {
+  padding: $card-padding;
+  background: $dopeYellow;
+}
+
+.landingPage--landingContent {
+  background: rgba(#3887be, 1);
+  color: white;
+  font-size: 30px;
+
+  h2 {
+    padding: 0 30px;
+    text-align: center;
+  }
+}

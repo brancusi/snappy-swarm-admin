@@ -1,0 +1,21 @@
+.node-settings {
+  background: #fede6f;
+  color: $slate;
+}
+
+.test-something {
+  display: flex;
+  flex-direction: row;
+
+  .company-setting-card-content {
+    width: 50%;
+  }
+}
+
+.node-setting-list {
+  width: 50%;
+}
+
+.node-setting-picture-container {
+  width: 50%;
+}

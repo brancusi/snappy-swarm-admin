@@ -1,0 +1,6 @@
+<h2>Nodes for <em>{{model.name}}</em></h2>
+<div class="layout-flexRow layout-flexWrap">
+  {{#each model.nodes key="id" as |node|}}
+    {{node-card model=node action='showNode'}}
+  {{/each}}
+</div>

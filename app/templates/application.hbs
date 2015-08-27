@@ -1,0 +1,28 @@
+<div class="layout-fullHeightContainer layout-flexColumn">
+  <header class="mainNav">
+    {{#paper-toolbar}}
+      <div class="md-toolbar-tools">
+        
+        {{#if session.isAuthenticated}}
+          {{#paper-button class="main-nav-button" action="navigateToSwarms"}}Swarms{{/paper-button}}
+
+          {{#paper-button class="main-nav-button" action="navigateToSettings"}}Settings{{/paper-button}}
+          
+          <div class="layout-spacer"/>
+
+          {{#paper-button action='invalidateSession'}}{{session.secure.profile.email}} | Logout{{/paper-button}}
+        {{else}}
+          {{#paper-button action='sessionRequiresAuthentication'}}Login{{/paper-button}}
+        {{/if}}
+      </div>
+    {{/paper-toolbar}}
+  </header>
+
+  <div class="layout-flexColumn layout-flexCell-stretch">
+    {{outlet}}
+  </div>
+
+  <footer class="siteFooter">
+    <small>Snappy App - v0.0.01</small>
+  </footer>
+</div>

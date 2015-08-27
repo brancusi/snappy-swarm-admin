@@ -1,0 +1,136 @@
+
+
+order-card {
+  cursor: pointer;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  color: $slate;
+  
+  @media screen and (max-width: 549px) {
+    min-width: 100%; 
+  }
+
+  @media screen and (min-width: 550px) {
+    min-width: 50%; 
+  }
+
+  @media screen and (min-width: 760px) {
+    min-width: 33.33%; 
+  }
+
+  @media screen and (min-width: 1100px) {
+    min-width: 25%; 
+  }
+
+  @media screen and (min-width: 1300px) {
+    min-width: 20%; 
+  }
+
+  md-card-content {
+    background-color: #fede6f;
+  }
+
+  h4 {
+    align-self: flex-end;
+  }
+}
+
+.order-card_header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  md-icon {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  elapsed-since {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+.order-card_header ~ md-divider {
+  margin: 10px 0 10px 0;
+}
+
+.order-card_order-item-row {
+  display: flex;
+  align-items: baseline;
+  padding: 2px 0 2px 0;
+}
+
+.order-card_order-item-row-name {
+  padding: 0 5px 0 5px;
+  flex-grow: 1;
+  padding:0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.order-card_order-item-row-x {
+  padding:0;
+  margin: 0; 
+}
+
+.order-card_order-item-row-quantity {
+  padding:0;
+  margin: 0; 
+}
+
+.order-card_customer-name {
+  display: flex;
+  justify-content: flex-end;
+  h4 {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+}
+
+.order-item-header_initial-square {
+  display: flex;
+  background-color: rgba(241, 115, 127, 1);
+
+  border-right: 4px solid $slate;
+  width: 60px;
+  height: 100%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: $slate;
+    font-size: 24px;
+    margin: 10px;
+  }
+    
+    // 
+    // margin: 0;
+    // padding: 0;
+  
+}
+
+.orderItemHeader {
+  display: flex;
+  margin:0;
+  padding:0;
+  align-items: baseline;
+
+  .itemName {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+  }
+
+  .itemQuantity {
+    margin-right: 20px;
+    font-size: 36px;
+  }
+}
+

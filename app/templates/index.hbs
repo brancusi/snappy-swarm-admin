@@ -1,0 +1,17 @@
+<div class="landingPage layout-flexColumn layout-flexCell-stretch">
+  
+  <div class="layout-flexRow layout-flexCell-stretch layout-center">
+    <div class="paperContainer landingPage--landingContent">
+      <h2>Snappy App. Control Them Cams. Realtime.</h2>
+    </div>
+  </div>
+
+  <div class="layout-flexRow layout-center">
+    {{#if session.isAuthenticated}}
+      {{#paper-button raised="true" class="btn-callToAction" action='navigateToProducts'}}Get Started{{/paper-button}}    
+    {{else}}
+      {{#paper-button raised="true" class="btn-callToAction" action='sessionRequiresAuthentication'}}Get Started{{/paper-button}}
+    {{/if}}
+
+  </div>
+</div>

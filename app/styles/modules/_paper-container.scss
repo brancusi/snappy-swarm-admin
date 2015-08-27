@@ -1,0 +1,10 @@
+$card-margin: 8px !default;
+$card-padding: 16px !default;
+$card-box-shadow: $whiteframe-shadow-z1 !default;
+
+.paperContainer {
+  box-sizing: border-box;
+  margin: $card-margin;
+  box-shadow: $card-box-shadow;
+  border-radius: $card-border-radius;
+}

@@ -1,0 +1,37 @@
+node-card {
+  cursor: pointer;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  color: $slate;
+  
+  @media screen and (max-width: 549px) {
+    min-width: 100%; 
+  }
+
+  @media screen and (min-width: 550px) {
+    min-width: 50%; 
+  }
+
+  @media screen and (min-width: 760px) {
+    min-width: 33.33%; 
+  }
+
+  @media screen and (min-width: 1100px) {
+    min-width: 25%; 
+  }
+
+  @media screen and (min-width: 1300px) {
+    min-width: 20%; 
+  }
+
+  md-card-content {
+    background-color: #fede6f;
+  }
+
+  h4 {
+    align-self: flex-end;
+  }
+}

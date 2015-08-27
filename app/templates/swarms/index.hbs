@@ -1,0 +1,6 @@
+<h2>Swarm List</h2>
+<div class="layout-flexRow layout-flexWrap">
+  {{#each model key="id" as |swarm|}}
+    {{swarm-card model=swarm action='showSwarm'}}
+  {{/each}}
+</div>

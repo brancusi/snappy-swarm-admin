@@ -1,0 +1,30 @@
+{{#paper-card class="node-settings"}}
+  {{#paper-card-content}}
+    <h2>{{model.name}}</h2>
+    <div class="row">
+      <div class="node-setting-list">
+        {{paper-divider}}
+        {{paper-input label="ISO" value=model.setting.iso}}
+        {{paper-input label="Shutter Speed" value=model.setting.shutterspeed}}
+        {{paper-input label="Aperture" value=model.setting.aperture}}
+      </div>
+
+      <div class="node-setting-picture-container">
+      
+        {{#paper-card-content}}
+          <img src="{{model.latestFileURL}}" width="200">  
+        {{/paper-card-content}}
+      </div>
+    </div>
+
+    {{#paper-button raised=true primary=true action='takePicture'}}Take Picture{{/paper-button}}
+    
+    {{#paper-button raised=true primary=true action='tether'}}Tether{{/paper-button}}
+    {{#paper-button raised=true primary=true action='unTether'}}UnTether{{/paper-button}}
+
+    {{#paper-button raised=true primary=true action='captureTethered'}}Capture Tethered{{/paper-button}}
+
+    {{#paper-button raised=true primary=true action='saveSettings'}}Save Settings{{/paper-button}}
+    
+  {{/paper-card-content}}
+{{/paper-card}}

@@ -1,0 +1,52 @@
+.row {
+  display: flex;
+}
+
+.layout-spacer {
+  flex-grow: 1;
+}
+
+.layout-flexCell-stretch {
+  flex: 1;
+}
+
+.layout-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-fullHeightContainer {
+  min-height: 100vh;
+}
+
+.layout-stripedContainer {
+  li:nth-child(odd) {
+    background: #f8f8f8;
+  }
+
+  li:nth-child(even) {
+    background: #fff;
+  }
+}
+
+.layout-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.liquid-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.liquid-child {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
